@@ -1,83 +1,87 @@
-# 🦋 Guia de Estruturação de Dashboards: Beautytopia
-**Projeto:** Arquitetura Visual e Relatórios - SIMULARE
-
-Este documento estabelece o escopo visual e estrutural para a criação dos dashboards e do relatório executivo da Beautytopia.
+# 🦋 Dashboard Executivo: Beautytopia
+> **Roteiro Estrutural de Lâminas e Componentes para o Power BI**
 
 ---
 
-## 🎨 Identidade Visual (Design System)
-As cores corporativas da Beautytopia devem ser aplicadas de forma estratégica para manter a sobriedade exigida em apresentações executivas.
+## 🎨 Paleta de Identidade Visual no Painel
+Para garantir a consistência estética em todas as visões, os elementos visuais utilizam a seguinte codificação:
 
-| Cor | Hex Code | Aplicação no Dashboard |
-| :--- | :--- | :--- |
-| **Rosa Utopia** | `#D81B60` | Destaque de KPIs primários, barras principais em gráficos de receita e linhas de tendência do carro-chefe. |
-| **Lilás Suave** | `#F3E5F5` | Fundos de tabelas, áreas de respiro, barras secundárias e bordas de divisões (cards). |
-| **Chumbo Executivo**| `#212121` | Títulos, textos corridos, legendas e eixos X/Y dos gráficos (substitui o preto absoluto). |
-| **Off-White** | `#FAFAFA` | Cor de fundo geral das lâminas e do dashboard para contrastar e ressaltar os gráficos. |
+* 🔴 **Rosa Utopia (`#D81B60`):** Indicadores Críticos, Carro-chefe e Metas.
+* 🟣 **Lilás Suave (`#E1BEE7`):** Elementos de Apoio, Linhas de Grade e Comparativos.
+* ⚫ **Chumbo Executivo (`#212121`):** Textos, Eixos de Gráficos e Títulos.
 
 ---
 
-## 📊 1. Lâmina: Fundamentos de Marketing
-**Objetivo da Tela:** Apresentar a performance comercial, o impacto das estratégias adotadas e a posição competitiva.
+## 📊 LÂMINA 1: Fundamentos de Marketing
+> Estrutura focada no monitoramento comercial e posicionamento de mercado.
 
-### Estrutura do Dashboard
-* **KPIs (Cards Superiores):** * Market Share Atual (%)
-  * Preço Médio Praticado vs. Média do Mercado
-  * Índice de Demanda Atendida (%)
-* **Gráfico Principal:** Gráfico de Linhas/Barras combinadas mostrando a evolução da Demanda Prevista vs. Vendas Realizadas ao longo dos períodos.
-* **Área de Relatório (Caixa de Texto / Resumo Executivo):**
-  * *Síntese Estratégica:* Espaço para descrever as decisões de Preço, Diferenciação e Propaganda.
-  * *Análise de Impacto:* Breve texto justificando se o resultado da rodada foi positivo ou negativo.
-  * *Posicionamento Final:* Card destacando a posição da empresa no ranking ao final do período.
+### 📈 Indicadores de Performance (Cards Principais)
+| Market Share | Preço Praticado vs Mercado | Demanda Atendida |
+| :---: | :---: | :---: |
+| ![Share](https://img.shields.io/badge/Market_Share-[Valor_%]-D81B60?style=for-the-badge) | ![Preço](https://img.shields.io/badge/Preço-[Status]-212121?style=for-the-badge) | ![Atendimento](https://img.shields.io/badge/Eficiência-[Valor_%]-E1BEE7?style=for-the-badge) |
 
----
+### 🗺️ Disposição dos Elementos Visuais
++-----------------------------------------------------------------------+
+|  [Gráfico de Linhas Combinadas: Evolução de Demanda vs Vendas]       |
+|  - Eixo X: Períodos (P0 a P8)                                         |
+|  - Linha Rosa: Demanda Prevista | Linha Chumbo: Vendas Realizadas     |
++-----------------------------------------------------------------------+
+|  [Painel Lateral: Caixa de Texto Automatizada]                        |
+|  * Descrição narrativa das decisões da rodada (Preço, Propaganda)     |
+|  * Card de Destaque: Posição Atual no Ranking Geral                   |
++-----------------------------------------------------------------------+
 
-## 🛒 2. Lâmina: Gestão de Compras e Adm. de Materiais
-**Objetivo da Tela:** Demonstrar a eficiência na aquisição de insumos e saúde do estoque.
-
-### Estrutura do Dashboard
-* **KPIs (Cards Superiores):**
-  * Saving/Economia de Compras (%)
-  * Giro de Estoque
-  * Índice de Compras Compulsórias/Emergenciais (%)
-* **Gráficos:**
-  * *Gráfico de Barras:* Custo Médio Unitário dos Insumos por fornecedor vs. Preço Base.
-  * *Gráfico de Rosca:* Composição do Estoque atual (Quais insumos têm maior volume armazenado).
-* **Tabela de Decisões:** Uma tabela simples evidenciando a relação entre os prazos de pagamento escolhidos e as taxas de juros evitadas/assumidas.
 
 ---
 
-## 💰 3. Lâmina: Planejamento e Controle Financeiro
-**Objetivo da Tela:** Traduzir a operação em indicadores econômicos e saúde financeira (foco na rentabilidade e insolvência).
+## 🛒 LÂMINA 2: Gestão de Compras e Adm. de Materiais
+> Estrutura voltada ao controle de estoque, eficiência de custos e logística.
 
-### Estrutura do Dashboard (Indicadores Operacionais)
-* **Gráfico de Pizza/Rosca:** Composição da Receita Líquida (Participação % de cada serviço no total do período).
-* **Gráfico de Barras Empilhadas:** Margem Bruta Geral (Receita total subtraindo Custo de Produtos Vendidos e Fretes).
-* **Múltiplos Gráficos de Linha (Um para cada serviço):** Evolução de "Preço vs. Custo vs. Margem" ao longo das rodadas.
+### 🔋 Status Atual dos Recursos
+* **Giro de Estoque:** `[Frequência de Rotação]` 🔄
+* **Nível de Compras de Emergência:** `[Percentual %]` ⚠️
 
-### Estrutura do Dashboard (Indicadores Econômico-Financeiros)
-* **Cards de Alerta Rápido (KPIs):**
-  * Liquidez Corrente (LC)
-  * Endividamento Geral (EG)
-  * Margem Operacional (MO) - *Com nota de rodapé comparando com a alíquota da RFB (8%).*
-  * ROE (Retorno sobre o Patrimônio Líquido)
-* **Gráficos de Evolução (Linha/Área):**
-  * Evolução do EBITDA ao longo dos períodos.
-  * Evolução do ROIC ao longo dos períodos.
+### 📦 Níveis de Insumos em Prateleira (Barras de Progresso Textuais)
+* **Item A:** `[████████████░░░░]` *[Quantidade Atual / Mínima]*
+* **Item B:** `[██████░░░░░░░░░░]` *[Quantidade Atual / Mínima]*
+* **Item C:** `[████████████████]` *[Quantidade Atual / Mínima]*
+
+> [!NOTE]
+> **Modelo do Gráfico Inferior:** Gráfico de colunas comparando o preço de custo unitário final por fornecedor cadastrado contra as taxas de juros cobradas nas opções de prazo de pagamento.
 
 ---
 
-## 👥 4. Lâmina: Fundamentos de Gestão de Pessoas
-**Objetivo da Tela:** Analisar a eficiência do capital humano, as decisões de contratação e seus reflexos diretos na produção.
+## 💰 LÂMINA 3: Planejamento e Controle Financeiro
+> Visão analítica da saúde econômica, margens e índices de insolvência.
 
-### Estrutura do Dashboard
-* **KPIs (Cards Superiores):**
-  * Índice de Satisfação/Motivação da Equipe
-  * Produtividade (Horas Trabalhadas vs. Horas Ociosas)
-  * Custo da Mão de Obra vs. Faturamento (%)
-* **Gráfico Principal:** Gráfico de termômetro ou velocímetro medindo o "Gargalo Operacional" (Capacidade Máxima Instalada vs. Demanda Exigida).
+### 🧪 KPIs Financeiros e Fórmulas Associadas
+> **EBITDA:** `[Lucro Operacional + Depreciação]`  
+> **ROE (Retorno sobre o Patrimônio Líquido):** `[Lucro Líquido / Patrimônio Líquido]`  
+> **ROIC (Retorno sobre o Capital Investido):** `[NOPAT / Capital Investido]`
 
-### Área de Relatório (Texto Analítico)
-* **Bloco 1 - Decisões do Período:** Lista estruturada das ações tomadas (Contratações/Demissões, definição de salários, horas extras, PLR e treinamentos).
-* **Bloco 2 - Impacto no Desempenho:** Análise de como essas decisões (ex: escolha entre contratar vs. pagar hora extra) impactaram a margem de lucro e o atendimento ao cliente.
-* **Bloco 3 - Avaliação Crítica:** Parecer final do grupo. As decisões foram assertivas? Houve aprendizado ou necessidade de mudança de rota para a próxima rodada?
+### 📊 Painel de Gráficos Requeridos
+┌──────────────────────────────────────┐ ┌──────────────────────────────────────┐
+│  [Gráfico de Rosca]                  │ │  [Gráfico de Colunas Empilhadas]     │
+│  Participação de cada produto        │ │  Margem Bruta por Região de Atuação  │
+│  na Receita Líquida Total.           │ │  (Receita - CPV - Fretes)            │
+└──────────────────────────────────────┘ └──────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  [Gráfico de Linhas Múltiplas: Evolução Histórica por Produto]               │
+│  Evolução Comparativa: Preço Médio vs. Custo do Produto vs. Margem Unitária  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+---
+
+## 👥 LÂMINA 4: Fundamentos de Gestão de Pessoas
+> Análise do uso de capital humano, produtividade da equipe e tomadas de decisão de RH.
+
+### 🧠 Indicadores de Equipe (Cards Informativos)
+> 💡 **Índice de Motivação/Satisfação:** `[Coeficiente da Rodada]`  
+> ⏳ **Horas Ociosas da Mão de Obra:** `[Total de Horas]`  
+> 📈 **Gargalo Operacional:** `[Capacidade Máxima Instalada]` vs `[Demanda Real Exigida]`
+
+### 📋 Fluxo Narrativo do Relatório de RH
+1. **Síntese de Ações:** Histórico de contratações, demissões, salários praticados, comissões e concessão de benefícios/treinamentos.
+2. **Avaliação por Rodada:** Análise de causa e efeito detalhando em que medida a escolha entre pagar Horas Extras ou realizar novas Contratações impactou diretamente o resultado do caixa.
+3. **Crítica de Assertividade:** Autoavaliação do grupo sobre o planejamento humano e defesas de mudança de rota operacional, caso necessário.

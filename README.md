@@ -1,77 +1,73 @@
-# 🦋 Guia de Estruturação de Dashboards: Beautytopia
-**Projeto:** Arquitetura Visual e Relatórios - SIMULARE
+# 🦋 Relatório Executivo SIMULARE: Beautytopia
+**Período:** #1 | **Empresa:** E07 | **Plataforma:** Simulare (8 Períodos)
 
-Este documento estabelece o escopo visual e estrutural para a criação dos dashboards e do relatório executivo da Beautytopia.
+A Beautytopia atua no mercado de estética com foco em um posicionamento de alto valor agregado (estética Fairytopia/Gen Z). Este documento sintetiza as decisões estratégicas do período, o impacto nos indicadores propostos e a avaliação de performance da equipe.
+
 ---
 
 ## 🎨 Identidade Visual (Design System)
-As cores corporativas da Beautytopia devem ser aplicadas de forma estratégica para manter a sobriedade exigida em apresentações executivas.
+Para a construção dos Dashboards, a paleta de cores deve seguir o padrão corporativo da Beautytopia, garantindo um tom analítico e profissional sem perder a identidade da marca.
 
-| Cor | Amostra Visual (Swatch) | Hex Code | Aplicação no Dashboard |
-| :--- | :---: | :--- | :--- |
-| **Rosa Utopia** | ![](https://img.shields.io/badge/Cor-%23D81B60-D81B60?style=flat-square) | `#D81B60` | Destaque de KPIs primários, barras principais em gráficos de receita e linhas de tendência do carro-chefe. |
-| **Lilás Suave** | ![](https://img.shields.io/badge/Cor-%23F3E5F5-F3E5F5?style=flat-square) | `#F3E5F5` | Fundos de tabelas, áreas de respiro, barras secundárias e bordas de divisões (cards). |
-| **Chumbo Executivo**| ![](https://img.shields.io/badge/Cor-%23212121-212121?style=flat-square) | `#212121` | Títulos, textos corridos, legendas e eixos X/Y dos gráficos (substitui o preto absoluto). |
-| **Off-White** | ![](https://img.shields.io/badge/Cor-%23FAFAFA-FAFAFA?style=flat-square) | `#FAFAFA` | Cor de fundo geral das lâminas e do dashboard para contrastar e ressaltar os gráficos. |
-
----
-
-## 📊 1. Lâmina: Fundamentos de Marketing
-**Objetivo da Tela:** Apresentar a performance comercial, o impacto das estratégias adotadas e a posição competitiva.
-
-### Estrutura do Dashboard
-* **KPIs (Cards Superiores):** * Market Share Atual (%)
-  * Preço Médio Praticado vs. Média do Mercado
-  * Índice de Demanda Atendida (%)
-* **Gráfico Principal:** Gráfico de Linhas/Barras combinadas mostrando a evolução da Demanda Prevista vs. Vendas Realizadas ao longo dos períodos.
-* **Área de Relatório (Caixa de Texto / Resumo Executivo):**
-  * *Síntese Estratégica:* Espaço para descrever as decisões de Preço, Diferenciação e Propaganda.
-  * *Análise de Impacto:* Breve texto justificando se o resultado da rodada foi positivo ou negativo.
-  * *Posicionamento Final:* Card destacando a posição da empresa no ranking ao final do período.
+| Cor | Hex Code | Aplicação no Dashboard |
+| :--- | :--- | :--- |
+| **Rosa Utopia** | `#D81B60` | Destaque principal, barras de receita, linhas de tendência (Limpeza de Pele). |
+| **Lilás Suave** | `#F3E5F5` | Fundos de tabela, barras secundárias e apoio visual (Depilação a Laser). |
+| **Chumbo Executivo**| `#212121` | Textos gerais, eixos de gráficos e títulos (evitar preto 100%). |
+| **Off-White** | `#FAFAFA` | Cor de fundo geral dos painéis para ressaltar as cores da marca. |
 
 ---
 
-## 🛒 2. Lâmina: Gestão de Compras e Adm. de Materiais
-**Objetivo da Tela:** Demonstrar a eficiência na aquisição de insumos e saúde do estoque.
+## 📊 1. Fundamentos de Marketing
 
-### Estrutura do Dashboard
-* **KPIs (Cards Superiores):**
-  * Saving/Economia de Compras (%)
-  * Giro de Estoque
-  * Índice de Compras Compulsórias/Emergenciais (%)
-* **Gráficos:**
-  * *Gráfico de Barras:* Custo Médio Unitário dos Insumos por fornecedor vs. Preço Base.
-  * *Gráfico de Rosca:* Composição do Estoque atual (Quais insumos têm maior volume armazenado).
-* **Tabela de Decisões:** Uma tabela simples evidenciando a relação entre os prazos de pagamento escolhidos e as taxas de juros evitadas/assumidas.
+### Decisões e Posicionamento
+Diante da retração de 40% do mercado, a estratégia adotada foi a **restrição intencional de demanda** para a Limpeza de Pele. Identificamos um limite físico operacional de 600 insumos (Sabonete Esfoliante e Gel) no estoque inicial. Para evitar a multa de 40% nas compras compulsórias, tomamos as seguintes decisões:
+* **Preço:** Aumento da Limpeza de Pele para a faixa de R$ 155,00.
+* **Propaganda:** Zero inserções (corte de R$ 1.500/cada) para não atrair clientes sem capacidade de atendimento.
+* **Depilação a Laser:** Preço estabilizado em R$ 95,00, absorvendo a demanda residual.
+
+### Impacto e Posição
+O impacto foi **positivo**. A marca focou no cliente de alta renda via Diferenciação, blindando o caixa contra multas logísticas e despesas de marketing ineficientes. A empresa encerrou o período no **1º lugar do Ranking** de Rentabilidade do Ativo Acumulado (25,43%).
 
 ---
 
-## 💰 3. Lâmina: Planejamento e Controle Financeiro
-**Objetivo da Tela:** Traduzir a operação em indicadores econômicos e saúde financeira (foco na rentabilidade e insolvência).
+## 🛒 2. Gestão de Compras e Adm. de Materiais
 
-### Estrutura do Dashboard (Indicadores Operacionais)
-* **Gráfico de Pizza/Rosca:** Composição da Receita Líquida (Participação % de cada serviço no total do período).
-* **Gráfico de Barras Empilhadas:** Margem Bruta Geral (Receita total subtraindo Custo de Produtos Vendidos e Fretes).
-* **Múltiplos Gráficos de Linha (Um para cada serviço):** Evolução de "Preço vs. Custo vs. Margem" ao longo das rodadas.
+### Estratégia de Suprimentos
+Aproveitamos a nossa alta liquidez (caixa de R$ 70.000) para realizar uma manobra de alavancagem operacional através de uma compra robusta.
 
-### Estrutura do Dashboard (Indicadores Econômico-Financeiros)
-* **Cards de Alerta Rápido (KPIs):**
-  * Liquidez Corrente (LC)
-  * Endividamento Geral (EG)
-  * Margem Operacional (MO) - *Com nota de rodapé comparando com a alíquota da RFB (8%).*
-  * ROE (Retorno sobre o Patrimônio Líquido)
-* **Gráficos de Evolução (Linha/Área):**
-  * Evolução do EBITDA ao longo dos períodos.
-  * Evolução do ROIC ao longo dos períodos.
+* **Decisão:** Concentração total do pedido na fornecedora **Top Care**.
+* **Indicadores e Impacto:**
+  * **Saving (Economia):** Ao atingir os lotes máximos exigidos, destravamos **15% de desconto** direto.
+  * **Custo Unitário Final:** Mesmo com o IPI alto (17%), o Sabonete Esfoliante caiu para imbatíveis R$ 0,99 e o Kit Higienização para R$ 4,82.
+  * **Estratégia de Caixa:** O pagamento foi realizado **à vista**, anulando a taxa de juros de 4,35% a.p. cobrada pelo fornecedor para compras a prazo.
 
 ---
 
-## 👥 4. Lâmina: Fundamentos de Gestão de Pessoas
-**Objetivo da Tela:** Analisar a eficiência do capital humano, as decisões de contratação e seus reflexos diretos na produção.
+## 💰 3. Planejamento e Controle Financeiro
 
-### Estrutura do Dashboard
-* **KPIs (Cards Superiores):**
-  * Índice de Satisfação/Motivação da Equipe
-  * Produtividade (Horas Trabalhadas vs. Horas Ociosas)
-  * Custo da Mão de Obra vs. Faturamento (%)
-* **Gráfico Principal:** Gráfico de termômetro ou velocímetro medindo o "Gargalo Operacional" (Capacidade Máxima Instalada vs. Demanda Exigida).
+*(Nota de desenvolvimento: Para a entrega destes indicadores operacionais, recomenda-se a estruturação de um painel interativo utilizando medidas DAX e HTML/CSS para customização visual dos cards e gráficos, garantindo alto nível analítico na apresentação).*
+
+### Indicadores Operacionais
+* **Composição da Receita Líquida:** A Limpeza de Pele representou 63% da receita, enquanto a Depilação a Laser representou 37%.
+* **Margem Bruta Global:** Receita Líquida Total (R$ 121.269) subtraída do Custo dos Serviços Prestados (R$ 36.574), resultando em margens unitárias altamente saudáveis:
+  * *Limpeza de Pele:* Preço $140 - CPV $46 = Margem de **$94**.
+  * *Depilação a Laser:* Preço $90 - CPV $21 = Margem de **$69**.
+
+### Indicadores Econômicos e Financeiros
+* **Liquidez Corrente (LC):** `1.74` (Forte capacidade de honrar obrigações de curto prazo).
+* **Endividamento Geral (EG):** `54.09%`.
+* **Margem Operacional (MO):** Fechamento em `6.88%`, aderente à realidade do mercado (próximo à alíquota de lucro presumido da RFB de 8%).
+* **Rentabilidade (ROE e ROIC):** Retorno sobre o Patrimônio Líquido (ROE) extremamente atrativo, na casa dos `55.4%`.
+
+---
+
+## 👥 4. Fundamentos de Gestão de Pessoas
+
+### a) Síntese das Decisões
+Diagnosticamos que a perda de vendas no período base (onde 1.483 clientes procuraram a Limpeza de Pele e apenas 560 foram atendidos) ocorreu por um gargalo exclusivo de **Mão de Obra Direta**. Dos 2 esteticistas disponíveis (1.100 horas), consumimos 1.099 horas. A operação esbarrou no limite físico. A decisão no período foi **contratar +1 esteticista**, mantendo o piso salarial (6,85) e a PLR em 5%. 
+
+### b) Impacto das Decisões no Desempenho
+A escolha pela contratação em vez da imposição de horas extras foi crucial para o Resultado Líquido. Horas extras no setor representam um acréscimo de 75% a 100% no custo da hora trabalhada. A diluição da demanda no novo funcionário evitou o estrangulamento da margem operacional.
+
+### c) Avaliação Crítica
+O grupo avalia as decisões como **altamente assertivas**. Não mudaríamos a estratégia de evitar as horas extras. A adição de um terceiro colaborador equilibrou a carga operacional, preparando a clínica para absorver o crescimento orgânico dos próximos períodos sem sacrificar o clima organizacional (coeficiente de satisfação mantido na média de mercado) e protegendo a rentabilidade dos serviços prestados.

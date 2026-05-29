@@ -50,7 +50,7 @@ As cores corporativas da Beautytopia devem ser aplicadas de forma estratégica p
 **Objetivo da Tela:** Traduzir a operação em indicadores econômicos e saúde financeira (foco na rentabilidade e insolvência).
 
 ### Estrutura do Dashboard (Indicadores Operacionais)
-* **Gráfico de Pizza/Rosca:** Composição da Receita Líquida (Participação % de cada serviço no total do período).
+* **Gráfico de Barra C/Linha :** Composição da Receita Líquida (Participação % de cada serviço no total do período).
 * **Gráfico de Barras Empilhadas:** Margem Bruta Geral (Receita total subtraindo Custo de Produtos Vendidos e Fretes).
 * **Múltiplos Gráficos de Linha (Um para cada serviço):** Evolução de "Preço vs. Custo vs. Margem" ao longo das rodadas.
 

@@ -1,8 +1,7 @@
 # 🦋 Guia de Estruturação de Dashboards: Beautytopia
 **Projeto:** Arquitetura Visual e Relatórios - SIMULARE
 
-Este documento estabelece o escopo visual e estrutural para a criação dos dashboards e do relatório executivo da Beautytopia.
-
+Este documento estabelece o escopo visual e estrutural para a criação dos dashboards e do relatório executivo da Beautytopia.  
 ---
 
 ## 🎨 Identidade Visual (Design System)
@@ -76,3 +75,4 @@ As cores corporativas da Beautytopia devem ser aplicadas de forma estratégica p
   * Produtividade (Horas Trabalhadas vs. Horas Ociosas)
   * Custo da Mão de Obra vs. Faturamento (%)
 * **Gráfico Principal:** Gráfico de termômetro ou velocímetro medindo o "Gargalo Operacional" (Capacidade Máxima Instalada vs. Demanda Exigida).
+
